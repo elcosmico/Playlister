@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).on('ready', function() {
+	$(document).foundation();
+});
+
+$(document).on('page:change', function(evt) {
+	$(document).foundation();
+	init();
+});
+
+function init() {
+	console.log('ready');
+}
